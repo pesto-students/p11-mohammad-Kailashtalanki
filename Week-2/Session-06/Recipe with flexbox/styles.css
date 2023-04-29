@@ -1,4 +1,20 @@
 /* Add your styles here */
+.main-content {
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  flex-basis: 70%;
+}
+
+.ingredients {
+  flex-grow: 1;
+  flex-basis: 45%;
+}
+
+.directions {
+  flex-grow: 1;
+  flex-basis: 45%;
+}
 
 /* Given CSS rules below */
 body {
@@ -7,6 +23,8 @@ body {
 }
 
 header {
+  display: flex;
+  justify-content: space-between;
   border-bottom: 2px solid #93b5c6;
   background-color: #ddedaa;
   padding: 8px;
@@ -18,10 +36,14 @@ header {
 }
 
 .content {
+  display: flex;
+  flex-wrap: wrap;
   margin-left: 30px;
 }
 
 .title {
+  display: flex;
+  align-items: baseline;
   border-bottom: 1px dashed #93b5c6;
 }
 
@@ -35,6 +57,10 @@ header {
 }
 
 .summary {
+  display: flex;
+  justify-content: space-evenly;
+  flex-grow: 1;
+  flex-basis: 100%;
   margin-top: 30px;
 }
 
@@ -47,6 +73,13 @@ header {
   width: 210px;
 }
 
+.summary > div > div {
+  display: flex;
+  justify-content: space-between;
+}
+
 .related-content {
+  flex-grow: 1;
+  flex-basis: 20%;
   margin-left: 100px;
 }

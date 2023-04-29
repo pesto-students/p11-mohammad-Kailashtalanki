@@ -44,20 +44,21 @@
   z-index: 1;
 }
 
-.heart {
-  color: red;
-  font-size: 28px;
+.heart,
+.spade {
   width: 30px;
   height: 30px;
   line-height: 30px;
 }
 
+.heart {
+  color: red;
+  font-size: 28px;
+}
+
 .spade {
   color: black;
   font-size: 36px;
-  width: 30px;
-  height: 30px;
-  line-height: 30px;
 }
 
 .topLeft {
