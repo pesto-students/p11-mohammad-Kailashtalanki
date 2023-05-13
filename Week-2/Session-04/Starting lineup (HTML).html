@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Starting lineup (HTML)</title>
+</head>
+
+<body>
+  <h1>Starting Lineup</h1>
+  <form>
+    <fieldset>
+      <legend>Status:</legend>
+      <input type="radio" id="draft" name="draftOrFinal" value="Draft" />
+      <label for="draft">Draft</label>
+      <input type="radio" id="final" name="draftOrFinal" value="Final" checked />
+      <label for="final">Final</label>
+    </fieldset>
+    <br />
+    <label for="gameDate">Date:</label>
+    <select name="gameDate" id="gameDate">
+      <option value="march20">March 20</option>
+      <option value="march24">March 24</option>
+      <option value="april2">April 2</option>
+      <option value="april6">April 6</option>
+      <option value="april13">April 13</option>
+    </select>
+    <br /><br />
+    <fieldset>
+      <legend>Players:</legend>
+      <input type="checkbox" id="Aarav Agarwal" name="Aarav Agarwal" value="Aarav Agarwal" />
+      <label for="Aarav Agarwal">Aarav Agarwal</label><br />
+      <input type="checkbox" id="Ava Johnson" name="Ava Johnson" value="Ava Johnson" />
+      <label for="Ava Johnson">Ava Johnson</label><br />
+      <input type="checkbox" id="Julio Ortiz" name="Julio Ortiz" value="Julio Ortiz" />
+      <label for="Julio Ortiz">Julio Ortiz</label><br />
+      <input type="checkbox" id="Liam Rubio" name="Liam Rubio" value="Liam Rubio" />
+      <label for="Liam Rubio">Liam Rubio</label><br />
+      <input type="checkbox" id="Emma Witherspoon" name="Emma Witherspoon" value="Emma Witherspoon" />
+      <label for="Emma Witherspoon">Emma Witherspoon</label><br />
+    </fieldset>
+    <br />
+    <input type="submit" value="Submit" />
+  </form>
+</body>
+
+</html>

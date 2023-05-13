@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Add Review</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+  <header>
+    <h1>Restaurant Reviews</h1>
+    <div>
+      <a href="./index.html" class="headerATag">Home</a>
+      <a href="./AddReview.html" class="headerATag">Add Review</a>
+      <a href="./About.html" class="headerATag">About</a>
+    </div>
+  </header>
+  <main>
+    <h3>Add Review</h3>
+    <form>
+      <div>
+        <label for="name">Name?</label>
+        <input id="name" name="name" required type="text" />
+      </div>
+      <div>
+        <br />
+        <label for="restaurant">Restaurant?</label>
+        <select name="restaurant" id="restaurant">
+          <option value="mainstreetcafe">Main Street Cafe</option>
+          <option value="greekhouse">Greek House</option>
+        </select>
+      </div>
+      <br />
+      <div>
+        <label for="date">Date of visit?</label>
+        <input id="date" name="date" required type="date" />
+      </div>
+      <br />
+      <div>
+        <label for="rating">Rating?</label>
+        <input id="rating" name="rating" required type="number" value="5" min="0" max="5" />
+      </div>
+      <br />
+      <div>
+        <label for="details">Details?</label>
+        <textarea rows="3" cols="50" name="details" id="details"></textarea>
+      </div>
+      <br />
+      <div><input type="submit" value="Submit" /></div>
+      <br />
+    </form>
+  </main>
+  <footer>&copy; 2023 Restaunt Reviews [Made by Kailash T V]</footer>
+</body>
+
+</html>
