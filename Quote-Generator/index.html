@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./images/icon.png" type="image/png">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Quote Generator</h1>
+        <div class="input-container">
+            <input type="text" id="topic" placeholder="Enter topic...">
+            <input type="password" id="apikey" placeholder="Enter Open-AI API key...">
+            <button id="generateBtn">Generate Quotes</button>
+            <div id="loading" class="loading"></div>
+            <div id="error" class="error"></div>
+        </div>
+        <div id="quoteContainer"></div>
+    </div>
+
+    <footer>
+        <div class="footer">
+            <p>&copy; 2023 Quote Generator. All rights reserved.</p>
+            <p>Powered by Netlify. Created by <a href="https://www.linkedin.com/in/kailashtv">Kailash T V</a>. Open
+                Source Code @ <a href="https://github.com/Kailashtalanki/quote-generator">Github</a></p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
