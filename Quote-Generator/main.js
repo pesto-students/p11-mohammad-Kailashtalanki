@@ -19,7 +19,7 @@ async function fetchQuotes(topic) {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
-                Authorization: 'Bearer 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',
+                Authorization: `Bearer ${document.getElementById('apikey').value}`,
             },
             body: JSON.stringify({
                 prompt: `Generate quotes about "${topic}".\n1.`,
@@ -56,8 +56,22 @@ async function fetchQuotes(topic) {
 // Function to handle the search action.
 const onSearch = async () => {
     const topic = document.getElementById('topic').value;
+    const apiKey = document.getElementById('apikey').value;
+    const errorElement = document.getElementById('error');
 
-    if (topic.trim() !== '') {
+    // Validate input fields
+    if (topic === '' || apiKey === '') {
+        errorElement.textContent = 'Please fill in both inputs.';
+        return;
+    }
+
+    // Clear error message
+    errorElement.textContent = '';
+
+    const quoteContainer = document.getElementById('quoteContainer');
+    quoteContainer.innerHTML = '';
+
+    if (topic.trim() !== '' && apiKey.trim() !== '') {
         try {
             const quotes = await fetchQuotes(topic);
             const quoteContainer = document.getElementById('quoteContainer');

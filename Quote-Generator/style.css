@@ -20,6 +20,12 @@ body {
     animation: spin 1s linear infinite;
 }
 
+#error {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
 * {
     box-sizing: border-box;
 }
